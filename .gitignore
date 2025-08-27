@@ -1,0 +1,18 @@
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Generated activation/probe outputs (ignore all files/subdirs)
+adv_activations/
+normal_activations/
+probes/
