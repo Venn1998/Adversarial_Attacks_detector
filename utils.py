@@ -1,4 +1,4 @@
-from torchvision.models.resnet import BasicBlock
+from torchvision.models.resnet import BasicBlock, Bottleneck
 from tqdm import tqdm
 import torch
 import matplotlib.pyplot as plt
@@ -137,9 +137,9 @@ def eval_model(dataset_loader, model, img_func=None):
     return acc, top5
 
 
-def get_resnet_blocks(model, module_class=BasicBlock):
+def get_resnet_blocks(model):
     layers_to_probe = {}
     for name, module in model.named_modules():
-        if isinstance(module, module_class):
+        if isinstance(module, (BasicBlock, Bottleneck)):
             layers_to_probe[name] = module
     return layers_to_probe
