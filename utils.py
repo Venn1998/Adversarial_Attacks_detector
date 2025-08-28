@@ -75,6 +75,7 @@ def show_prediction(img, label, pred, K=5, adv_img=None, noise=None):
 
 def fast_gradient_sign_method(model, imgs, labels, epsilon=0.02):
     device = imgs.device
+    model.to(device)
     # Determine prediction of the model
     inp_imgs = imgs.clone().requires_grad_()
     preds = model(inp_imgs.to(device))

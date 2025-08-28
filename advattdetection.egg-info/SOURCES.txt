@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+advattdetection.egg-info/PKG-INFO
+advattdetection.egg-info/SOURCES.txt
+advattdetection.egg-info/dependency_links.txt
+advattdetection.egg-info/requires.txt
+advattdetection.egg-info/top_level.txt

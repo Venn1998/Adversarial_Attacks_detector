@@ -1,0 +1,9 @@
+ipython>=9.4.0
+matplotlib>=3.10.5
+pytorch-lightning>=2.5.3
+scikit-learn>=1.7.1
+scipy>=1.16.1
+seaborn>=0.13.2
+torch>=2.8.0
+torchinfo>=1.8.0
+torchvision>=0.23.0

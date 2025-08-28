@@ -16,3 +16,4 @@ __pycache__/
 adv_activations/
 normal_activations/
 probes/
+images/
