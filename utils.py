@@ -130,8 +130,8 @@ def eval_model(dataset_loader, model, img_func=None):
         tp_5 += (preds.topk(5, dim=-1)[1] ==
                  labels[..., None]).any(dim=-1).sum()
         counter += preds.shape[0]
-    acc = tp.float.item()/counter
-    top5 = tp_5.float().item()/counter
+    acc = tp/counter
+    top5 = tp_5/counter
     print(f"Top-1 error: {(100.0 * (1 - acc)):4.2f}%")
     print(f"Top-5 error: {(100.0 * (1 - top5)):4.2f}%")
     return acc, top5
