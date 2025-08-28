@@ -12,6 +12,9 @@ __pycache__/
 # Jupyter checkpoints
 .ipynb_checkpoints/
 
+#old experiments
+experiments_old.ipynb
+
 # Generated activation/probe outputs (ignore all files/subdirs)
 adv_activations/
 normal_activations/
