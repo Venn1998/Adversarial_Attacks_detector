@@ -20,6 +20,3 @@ adv_activations/
 normal_activations/
 probes/
 images/
-
-#all .png images
-*.png
