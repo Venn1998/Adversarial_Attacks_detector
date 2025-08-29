@@ -2,7 +2,9 @@
 
 This repository contains a simple proof-of-concept study on whether adversarial examples can be distinguished from clean inputs using **linear probes** trained on intermediate activations of deep neural networks.
 
-![](https://github.com/Venn1998/Adversarial_Attacks_detector/blob/main/AdvAttacks.png)
+<p align="center">
+  <img src="https://github.com/Venn1998/Adversarial_Attacks_detector/blob/main/AdvAttacks.png" width="600">
+</p>
 
 ## Overview
 
