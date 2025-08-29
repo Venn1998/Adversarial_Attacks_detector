@@ -2,6 +2,8 @@
 
 This repository contains a simple proof-of-concept study on whether adversarial examples can be distinguished from clean inputs using **linear probes** trained on intermediate activations of deep neural networks.
 
+![](https://github.com/Venn1998/Adversarial_Attacks_detector/blob/main/AdvAttacks.png)
+
 ## Overview
 
 Adversarial examples are small perturbations to inputs that fool neural networks while remaining almost imperceptible to humans. This project investigates:
@@ -10,7 +12,7 @@ Adversarial examples are small perturbations to inputs that fool neural networks
 - Are these differences **linearly separable** in activation space?
 - Can we use linear probes trained on activations to detect adversarial attacks?
 
-The experiments focus mainly on the **Fast Gradient Sign Method (FGSM)**, with additional tests applying Gaussian blur to study the role of high-frequency components.
+The experiments primarily focus on the **Fast Gradient Sign Method (FGSM)**, with additional tests applying a Gaussian blur to investigate the role of high-frequency components.
 
 ## Methodology
 
@@ -20,7 +22,7 @@ The experiments focus mainly on the **Fast Gradient Sign Method (FGSM)**, with a
    - Example: 5000 adversarial samples generated for each model.
 
 2. **Extract activations**  
-   - Models: ResNet family (e.g., ResNet34, ResNet101, ResNet152).  
+   - Models: ResNet family (e.g., ResNet18, ResNet34, ResNet50, ResNet101, ResNet152).  
    - Activations are averaged across spatial dimensions for each layer.
 
 3. **Train linear probes**  
