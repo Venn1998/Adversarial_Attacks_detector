@@ -60,3 +60,9 @@ modelname  = "resnet34"      # e.g., "resnet18", "resnet34", "resnet50", "resnet
 attackname = "fgsm+blur"     # or "fgsm"
 blursigma  = 1.0             # standard deviation of Gaussian blur
 epsilon    = 0.02            # FGSM attack strength (epsilon)
+```
+
+In the `results` folder, you can find, for each method and for each model used: 
+- *error rate* and *top5 error rate* of the model on normal images and on adversarial examples (`accuracy.json`)
+- *accuracy* of the linear probes for each layer of the model (`probes_accuracy.json`)
+- *plots* of the probes' accuracy per layer (`probes_accuracy.png`)
